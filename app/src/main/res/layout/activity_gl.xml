@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.github.mikephil.charting.charts.ScatterChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="invisible" />
+
+
+    <FrameLayout
+        android:id="@+id/scatter"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp" />
+
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增数据" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新数据" />
+
+    <Button
+        android:id="@+id/bt_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除数据" />
+
+
+</LinearLayout>

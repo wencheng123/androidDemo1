@@ -30,7 +30,9 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.2.1'
 
-
-
     implementation 'com.github.wencheng123:androidDemo1:1.0.3'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation 'org.xclcharts:lib:2.4'
 }

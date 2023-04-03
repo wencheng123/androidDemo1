@@ -26,6 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         TabLayout tabLayout  = findViewById(R.id.tab_layout);
 
+
         List<String> titles = new ArrayList<>();
         titles.add("全部");
         titles.add("北京望京");
