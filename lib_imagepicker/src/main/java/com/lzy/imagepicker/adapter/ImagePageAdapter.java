@@ -8,9 +8,6 @@ import android.widget.ImageView;
 
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.github.chrisbanes.photoview.OnPhotoTapListener;
-import com.github.chrisbanes.photoview.PhotoView;
-import com.github.chrisbanes.photoview.PhotoViewAttacher;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.util.Utils;
 import com.lzy.imagepicker.bean.ImageItem;
@@ -56,13 +53,20 @@ public class ImagePageAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        PhotoView photoView = new PhotoView(mActivity);
+        ImageView photoView = new ImageView(mActivity);
         ImageItem imageItem = images.get(position);
         imagePicker.getImageLoader().displayImagePreview(mActivity, imageItem.path, photoView, screenWidth, screenHeight);
-        photoView.setOnPhotoTapListener(new OnPhotoTapListener() {
+//        photoView.setOnPhotoTapListener(new OnPhotoTapListener() {
+//            @Override
+//            public void onPhotoTap(ImageView view, float x, float y) {
+//                if (listener != null) listener.OnPhotoTapListener(view, x, y);
+//            }
+//        });
+
+        photoView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPhotoTap(ImageView view, float x, float y) {
-                if (listener != null) listener.OnPhotoTapListener(view, x, y);
+            public void onClick(View v) {
+                if (listener != null) listener.OnPhotoTapListener(v, 0, 0);
             }
         });
         container.addView(photoView);
