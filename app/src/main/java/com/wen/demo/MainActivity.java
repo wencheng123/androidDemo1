@@ -7,6 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.lib.ToastUtil;
 
+/**
+ *    gitHub   账号密码登录，报404，只能采取token方式登录了。
+ *        token: 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
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
