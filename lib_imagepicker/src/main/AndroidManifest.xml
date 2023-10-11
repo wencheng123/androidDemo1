@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="com.lzy.imagepicker"
+    package="com.wen.imagepicker"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- 在SDCard中创建与删除文件权限 -->
@@ -15,32 +15,32 @@
 
 
     <application>
-        <activity android:name=".ui.ImageBaseActivity"/>
+        <activity android:name="com.wen.imagepicker.ui.ImageBaseActivity"/>
         <activity
-            android:name=".ui.ImageGridActivity"
+            android:name="com.wen.imagepicker.ui.ImageGridActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/ImagePickerTheme"/>
         <activity
-            android:name=".ui.ImageCropActivity"
+            android:name="com.wen.imagepicker.ui.ImageCropActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="false"
             android:theme="@style/ImagePickerTheme"/>
         <activity
-            android:name=".ui.ImagePreviewActivity"
+            android:name="com.wen.imagepicker.ui.ImagePreviewActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/ImagePickerThemeFullScreen"/>
 
         <activity
             android:screenOrientation="portrait"
-            android:name=".ui.ImagePreviewDelActivity"
+            android:name="com.wen.imagepicker.ui.ImagePreviewDelActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/ImagePickerThemeFullScreen"/>
 
         <provider
-            android:name=".ImagePickerProvider"
+            android:name="com.wen.imagepicker.ImagePickerProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
