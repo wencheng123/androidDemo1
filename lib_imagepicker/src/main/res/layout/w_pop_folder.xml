@@ -26,7 +26,7 @@
             android:layout_gravity="bottom"
             android:dividerHeight="1px"
             android:background="@android:color/white"
-            tools:listitem="@layout/adapter_folder_list_item"/>
+            tools:listitem="@layout/w_adapter_folder_list_item"/>
     </FrameLayout>
 
     <View

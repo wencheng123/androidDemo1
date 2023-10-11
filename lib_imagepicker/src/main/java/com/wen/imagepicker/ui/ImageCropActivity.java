@@ -40,7 +40,7 @@ public class ImageCropActivity extends ImageBaseActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_crop);
+        setContentView(R.layout.w_activity_image_crop);
 
         imagePicker = ImagePicker.getInstance();
 

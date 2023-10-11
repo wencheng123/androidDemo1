@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.test.lib.ToastUtil;
+import com.wen.imagepicker.ImagePicker;
+import com.wen.imagepicker.ui.ImageGridActivity;
+
 
 /**
  *    gitHub   账号密码登录，报404，只能采取token方式登录了。
@@ -21,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtil.show(MainActivity.this,"测试jitPack");
             }
         });
 
@@ -29,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_hd).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MainActivity2.class));
+//                startActivity(new Intent(MainActivity.this,MainActivity2.class));
+                ImagePicker.getInstance().setMultiMode(false);
+                Intent intent = new Intent(getApplicationContext(), ImageGridActivity.class);
+                startActivityForResult(intent, 12);
             }
         });
 

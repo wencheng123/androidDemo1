@@ -9,12 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_default_image" />
+        android:src="@drawable/w_ic_default_image" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ic_cover_shade" />
+        android:background="@drawable/w_ic_cover_shade" />
 
     <View
         android:id="@+id/mask"

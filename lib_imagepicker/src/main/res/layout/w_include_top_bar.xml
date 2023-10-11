@@ -11,9 +11,9 @@
         android:layout_width="48dp"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:background="@drawable/selector_back_press"
+        android:background="@drawable/w_selector_back_press"
         android:padding="12dp"
-        android:src="@drawable/ic_arrow_back" />
+        android:src="@drawable/w_ic_arrow_back" />
 
     <View
         android:layout_width="2px"
@@ -58,8 +58,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/selector_back_press"
+        android:background="@drawable/w_selector_back_press"
         android:padding="12dp"
-        app:srcCompat="@drawable/ic_vector_delete"
+        app:srcCompat="@drawable/w_ic_vector_delete"
         android:visibility="gone" />
 </RelativeLayout>

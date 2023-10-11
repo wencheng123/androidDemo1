@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_folder_item"
+    android:background="@drawable/w_bg_folder_item"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_image_folder"
+        android:background="@drawable/w_bg_image_folder"
         android:layout_margin="12dp">
 
         <ImageView
@@ -20,7 +20,7 @@
             android:layout_marginBottom="6dp"
             android:layout_marginRight="6dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_default_image" />
+            android:src="@drawable/w_ic_default_image" />
 
     </FrameLayout>
 
@@ -55,6 +55,6 @@
         android:layout_height="24dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="20dp"
-        app:srcCompat="@drawable/ic_vector_check" />
+        app:srcCompat="@drawable/w_ic_vector_check" />
 
 </LinearLayout>

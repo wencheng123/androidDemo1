@@ -86,7 +86,7 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_grid);
+        setContentView(R.layout.w_activity_image_grid);
 
         imagePicker = ImagePicker.getInstance();
         imagePicker.clear();

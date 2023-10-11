@@ -82,9 +82,9 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (viewType == ITEM_TYPE_CAMERA){
-            return new CameraViewHolder(mInflater.inflate(R.layout.adapter_camera_item,parent,false));
+            return new CameraViewHolder(mInflater.inflate(R.layout.w_adapter_camera_item,parent,false));
         }
-        return new ImageViewHolder(mInflater.inflate(R.layout.adapter_image_list_item,parent,false));
+        return new ImageViewHolder(mInflater.inflate(R.layout.w_adapter_image_list_item,parent,false));
     }
 
     @Override
@@ -177,7 +177,11 @@ public class ImageRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.View
             } else {
                 cbCheck.setVisibility(View.GONE);
             }
-            imagePicker.getImageLoader().displayImage(mActivity, imageItem.path, ivThumb, mImageSize, mImageSize); //显示图片
+
+            if (imagePicker != null && imagePicker.getImageLoader() != null) {
+                imagePicker.getImageLoader().displayImage(mActivity, imageItem.path, ivThumb, mImageSize, mImageSize); //显示图片
+            }
+
         }
 
     }

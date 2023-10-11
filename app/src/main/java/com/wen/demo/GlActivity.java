@@ -142,6 +142,13 @@ public class GlActivity extends AppCompatActivity {
             }
         });
 
+
+        findViewById(R.id.bt_camera).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     ScatterChartView chartView;

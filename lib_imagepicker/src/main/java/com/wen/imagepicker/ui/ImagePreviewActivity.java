@@ -207,16 +207,16 @@ public class ImagePreviewActivity extends ImagePreviewBaseActivity implements
     @Override
     public void onImageSingleTap() {
         if (topBar.getVisibility() == View.VISIBLE) {
-            topBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.top_out));
-            bottomBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_out));
+            topBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.w_top_out));
+            bottomBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.w_fade_out));
             topBar.setVisibility(View.GONE);
             bottomBar.setVisibility(View.GONE);
             tintManager.setStatusBarTintResource(Color.TRANSPARENT);//通知栏所需颜色
             //给最外层布局加上这个属性表示，Activity全屏显示，且状态栏被隐藏覆盖掉。
 //            if (Build.VERSION.SDK_INT >= 16) content.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
         } else {
-            topBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.top_in));
-            bottomBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_in));
+            topBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.w_top_in));
+            bottomBar.setAnimation(AnimationUtils.loadAnimation(this, R.anim.w_fade_in));
             topBar.setVisibility(View.VISIBLE);
             bottomBar.setVisibility(View.VISIBLE);
             tintManager.setStatusBarTintResource(R.color.ip_color_primary_dark);//通知栏所需颜色
