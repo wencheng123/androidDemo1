@@ -54,8 +54,8 @@ public class ImagePreviewActivity extends ImagePreviewBaseActivity implements
         bottomBar = findViewById(R.id.bottom_bar);
         bottomBar.setVisibility(View.VISIBLE);
 
-        mCbCheck = (SuperCheckBox) findViewById(R.id.cb_check);
-        mCbOrigin = (SuperCheckBox) findViewById(R.id.cb_origin);
+        mCbCheck = (SuperCheckBox) findViewById(R.id.w_cb_check);
+        mCbOrigin = (SuperCheckBox) findViewById(R.id.w_cb_origin);
         marginView = findViewById(R.id.margin_bottom);
         mCbOrigin.setText(getString(R.string.ip_origin));
         mCbOrigin.setOnCheckedChangeListener(this);
@@ -180,7 +180,7 @@ public class ImagePreviewActivity extends ImagePreviewBaseActivity implements
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         int id = buttonView.getId();
-        if (id == R.id.cb_origin) {
+        if (id == R.id.w_cb_origin) {
             if (isChecked) {
                 long size = 0;
                 for (ImageItem item : selectedImages)

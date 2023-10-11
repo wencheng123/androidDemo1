@@ -77,7 +77,7 @@ public abstract class ImagePreviewBaseActivity extends ImageBaseActivity {
 
         mTitleCount = (TextView) findViewById(R.id.tv_des);
 
-        mViewPager = (ViewPagerFixed) findViewById(R.id.viewpager);
+        mViewPager = (ViewPagerFixed) findViewById(R.id.w_viewpager);
         mAdapter = new ImagePageAdapter(this, mImageItems);
         mAdapter.setPhotoViewClickListener(new ImagePageAdapter.PhotoViewClickListener() {
             @Override
