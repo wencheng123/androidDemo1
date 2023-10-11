@@ -50,7 +50,7 @@ afterEvaluate {
     }
 }
 
-//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
+//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
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
